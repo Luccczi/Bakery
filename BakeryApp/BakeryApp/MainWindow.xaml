@@ -1,0 +1,25 @@
+﻿<Window x:Class="BakeryApp.MainWindow"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BakeryApp"
+        mc:Ignorable="d"
+        Title="Главное окно" MinHeight="460" MinWidth="900">
+    <Grid>
+        <Menu Height="44" VerticalAlignment="Top">
+            <MenuItem Header="Продукция" Click="MenuItem_Click" />
+
+            <MenuItem Header="Заказы">
+                <MenuItem Header="Просмотр заказов" Click="MenuOrder_Click" ></MenuItem>
+                <MenuItem Header="Создать заказ" Click="MenuOrderAdd_Click"/>
+            </MenuItem>
+            <MenuItem Header="Клиенты">
+                <MenuItem Header="Просмотр клиентов" Click="MenuClient_Click" ></MenuItem>
+                <MenuItem Header="Добавить клиента" Click="MenuClientAdd_Click"/>
+            </MenuItem>
+        </Menu>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Margin="0,44,0,0"/>
+    </Grid>
+</Window>

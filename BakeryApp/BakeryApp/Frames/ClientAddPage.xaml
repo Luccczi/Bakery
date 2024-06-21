@@ -1,0 +1,33 @@
+﻿<Page x:Class="BakeryApp.Frames.ClientAddPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BakeryApp.Frames"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ClientAddPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Button Content="Сохранить" Click="btnSave_Click" Height="30" Width="130" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Background="White" Margin="0,0,10,0" Cursor="Hand"/>
+        <Button Content="Назад" Click="btnBack_Click" Height="30" Width="130" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Grid.Row="1" Background="White"/>
+        <Label Content="Имя клиента" HorizontalAlignment="Right" Margin="0,20,10,0" VerticalAlignment="Top" Height="30" Width="130" Foreground="Black"/>
+        <Label Content="Телефон" HorizontalAlignment="Right" Margin="0,80,10,0" VerticalAlignment="Top" Height="30" Width="130" Foreground="Black"/>
+        <Label Content="Почта" HorizontalAlignment="Right" Margin="0,140,10,0" VerticalAlignment="Top" Height="30" Width="130" Foreground="Black"/>
+        <Label Content="Адрес" HorizontalAlignment="Right" Margin="0,210,10,0" VerticalAlignment="Top" Height="30" Width="130" Foreground="Black"/>
+        <Label Content="ИНН" HorizontalAlignment="Right" Margin="0,280,10,0" VerticalAlignment="Top" Height="30" Width="130" Foreground="Black"/>
+        <TextBox x:Name="tbName" TextWrapping="Wrap" MinWidth="130" Height="30" Margin="10,20,0,0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbPhone" TextWrapping="Wrap" MinWidth="130" Height="30" Margin="10,80,0,0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbEmail" TextWrapping="Wrap" MinWidth="130" Height="30" Margin="10,140,0,0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbAddress" TextWrapping="Wrap" MinWidth="130" MinHeight="25" Margin="10,210,0,0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30"/>
+        <TextBox x:Name="tbINN" TextWrapping="Wrap" MinWidth="130" MinHeight="25" Margin="10,280,0,0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30"/>
+    </Grid>
+</Page>
